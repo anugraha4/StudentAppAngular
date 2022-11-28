@@ -7,6 +7,7 @@ import { StudentEntryComponent } from './student-entry/student-entry.component';
 import { ViewAllComponent } from './view-all/view-all.component';
 import { StudentSearchComponent } from './student-search/student-search.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -26,7 +27,8 @@ const myRoute:Routes=[
     AppComponent,
     StudentEntryComponent,
     ViewAllComponent,
-    StudentSearchComponent
+    StudentSearchComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
