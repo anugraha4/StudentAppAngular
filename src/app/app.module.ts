@@ -6,6 +6,20 @@ import { AppComponent } from './app.component';
 import { StudentEntryComponent } from './student-entry/student-entry.component';
 import { ViewAllComponent } from './view-all/view-all.component';
 import { StudentSearchComponent } from './student-search/student-search.component';
+import { RouterModule, Routes } from '@angular/router';
+const myRoute:Routes=[
+  {
+    path:"",
+    component:StudentEntryComponent
+  },
+  {
+    path:"view",
+    component:ViewAllComponent
+  },{
+    path:"search",
+    component:StudentSearchComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -16,7 +30,8 @@ import { StudentSearchComponent } from './student-search/student-search.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
