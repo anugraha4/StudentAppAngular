@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./student-search.component.css']
 })
 export class StudentSearchComponent {
-
+AmissionNo=""
+search=()=>
+{
+  let sear:any={"AmissionNo":this.AmissionNo}
+  console.log(sear)
+}
 }
